@@ -1,0 +1,185 @@
+[
+  {
+    "kategori": "Aile Hukuku",
+    "id": 1,
+    "slug": "aile-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "Boşanma ve Ayrılık",
+        "aciklama": "Boşanma ve ayrılık davaları için hukuki danışmanlık hizmeti.",
+        "fiyat": 1500,
+        "sure": "2-3 ay",
+        "detaylar": [
+          "Boşanma dilekçesinin hazırlanması",
+          "Mal paylaşımı ve nafaka düzenlemeleri",
+          "Çocuk velayeti konularında danışmanlık"
+        ]
+      },
+      {
+        "baslik": "Çocuk Velayeti",
+        "aciklama": "Çocuk velayeti ile ilgili anlaşmazlıkların çözümü ve mahkeme süreçleri.",
+        "fiyat": 800,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "Velayet anlaşmazlıklarının çözümü",
+          "Mahkeme sürecinde temsil"
+        ]
+      },
+      {
+        "baslik": "Evlat Edinme",
+        "aciklama": "Evlat edinme prosedürleri ve yasal gereksinimler konusunda yardım.",
+        "fiyat": 1200,
+        "sure": "3-4 ay",
+        "detaylar": [
+          "Evlat edinme başvurusunun hazırlanması",
+          "Evlat edinme sürecinde rehberlik"
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "İş Hukuku",
+    "id": 2,
+    "slug": "is-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "İş Sözleşmeleri",
+        "aciklama": "İş sözleşmeleri, tazminatlar ve işçi hakları ile ilgili danışmanlık.",
+        "fiyat": 1200,
+        "sure": "2-3 ay",
+        "detaylar": [
+          "İş sözleşmesi tasarımı ve gözden geçirilmesi",
+          "Tazminat ve haklar konusunda bilgilendirme"
+        ]
+      },
+      {
+        "baslik": "İşçi İşten Çıkarma",
+        "aciklama": "İşçinin işten çıkarılması ve işten çıkarma süreçleri hakkında bilgi ve destek.",
+        "fiyat": 800,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "İşçi işten çıkarma prosedürlerinin yönetimi",
+          "İşçi hakları konusunda danışmanlık"
+        ]
+      },
+      {
+        "baslik": "İş Mahkemeleri",
+        "aciklama": "İş mahkemelerinde davaların açılması ve savunmanın sağlanması.",
+        "fiyat": 2000,
+        "sure": "3-4 ay",
+        "detaylar": [
+          "İş davası başvurusunun hazırlanması",
+          "Mahkeme sürecinde temsil ve savunma"
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "Ceza Hukuku",
+    "id": 3,
+    "slug": "ceza-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "Ceza Davaları",
+        "aciklama": "Suçlu bulunma durumunda hukuki savunma ve temsil hizmetleri.",
+        "fiyat": 1500,
+        "sure": "2-3 ay",
+        "detaylar": [
+          "Ceza davasının savunması",
+          "Ceza hukuku konusunda danışmanlık"
+        ]
+      },
+      {
+        "baslik": "Ceza İnfazı",
+        "aciklama": "Ceza infazı ve cezaevi süreçleri ile ilgili hukuki destek.",
+        "fiyat": 1000,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "Ceza infazı prosedürlerinin yönetimi",
+          "Cezaevinde haklar konusunda danışmanlık"
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "Gayrimenkul Hukuku",
+    "id": 4,
+    "slug": "gayrimenkul-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "Taşınmaz Alım-Satım",
+        "aciklama": "Gayrimenkul alım-satım işlemleri ve tapu süreçleri hakkında danışmanlık.",
+        "fiyat": 2000,
+        "sure": "2-3 ay",
+        "detaylar": [
+          "Taşınmaz malın satış sözleşmesinin hazırlanması",
+          "Tapu devri sürecinin yönetimi"
+        ]
+      },
+      {
+        "baslik": "Kira Hukuku",
+        "aciklama": "Kiralama işlemleri, kira anlaşmazlıkları ve tahliye süreçleri ile ilgili hukuki destek.",
+        "fiyat": 1200,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "Kira sözleşmesinin hazırlanması",
+          "Kira artışı ve tahliye davaları konusunda danışmanlık"
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "Şirket Hukuku",
+    "id": 5,
+    "slug": "sirket-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "Şirket Kuruluşu",
+        "aciklama": "Şirket kuruluş işlemleri, anlaşmalar ve yasal gereklilikler hakkında danışmanlık.",
+        "fiyat": 2500,
+        "sure": "3-4 ay",
+        "detaylar": [
+          "Şirket kuruluşu için gerekli belgelerin hazırlanması",
+          "Şirket sözleşmesinin oluşturulması"
+        ]
+      },
+      {
+        "baslik": "Şirket Danışmanlığı",
+        "aciklama": "Şirketler için genel hukuki danışmanlık ve sözleşme yönetimi hizmetleri.",
+        "fiyat": 1800,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "Şirketler için hukuki tavsiyeler",
+          "Sözleşmelerin gözden geçirilmesi"
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "Miras Hukuku",
+    "id": 6,
+    "slug": "miras-hukuku",
+    "hizmetler": [
+      {
+        "baslik": "Miras Davaları",
+        "aciklama": "Miras davaları ve mirasçı hakları konusunda hukuki destek ve temsil.",
+        "fiyat": 1800,
+        "sure": "2-3 ay",
+        "detaylar": [
+          "Miras davası açılması veya savunmanın sağlanması",
+          "Mirasçı haklarının korunması"
+        ]
+      },
+      {
+        "baslik": "Vasiyetname Hazırlığı",
+        "aciklama": "Vasiyetname oluşturma ve vasiyetname geçerliliği konusunda danışmanlık.",
+        "fiyat": 1000,
+        "sure": "1-2 ay",
+        "detaylar": [
+          "Vasiyetnamenin hazırlanması ve geçerliliğinin sağlanması",
+          "Mirasçılar arası anlaşmazlık durumunda hukuki destek"
+        ]
+      }
+    ]
+  }
+]
