@@ -6,7 +6,7 @@
         {{ subtitle }}
       </p>
     </div>
-    <div class="grid divide-y divide-neutral-200 max-w-2xl mx-auto mt-8">
+    <div class="grid divide-y divide-yellow-500 max-w-2xl mx-auto mt-8">
       <slot name="detail" />
     </div>
   </div>

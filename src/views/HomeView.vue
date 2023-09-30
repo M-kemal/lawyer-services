@@ -26,6 +26,15 @@
                   'object-cover': slide !== 'bg-4',
                 }"
               />
+              <p
+                v-show="slide === 'bg-2'"
+                class="absolute top-0 left-0 w-full transition duration-300 ease-in-out animate-wiggle"
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                fuga magni voluptate velit ullam facere necessitatibus assumenda
+                doloremque placeat fugiat molestias, cupiditate, perferendis
+                mollitia? Optio ad omnis animi non dicta?
+              </p>
             </div>
           </SlideApp>
         </CarouselApp>
