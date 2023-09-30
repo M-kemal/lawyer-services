@@ -68,6 +68,33 @@
     "kategori": "İş Hukuku",
     "id": 2,
     "slug": "is-hukuku",
+    "misyon": "MHK Hukuk olarak, iş dünyasında faaliyet gösteren müşterilere iş hukuku alanında uzmanlaşmış hukuki danışmanlık sunmaktadır. İş hukuku, işverenler ve çalışanlar arasındaki ilişkileri düzenleyen karmaşık bir hukuk dalıdır. İşverenlerin ve çalışanların haklarını korumak, iş ilişkilerini yönetmek ve iş hukuku ile ilgili sorunları çözmek için buradayız.",
+    "davalar": [
+      {
+        "davaAdi": "İş Sözleşmeleri :",
+        "dava": "İşverenler ve çalışanlar arasındaki sözleşmelerin hazırlanması, yorumlanması ve uygulanması."
+      },
+      {
+        "davaAdi": "İşe Alım ve İşten Çıkarma :",
+        "dava": "İşe alım süreçleri, işten çıkarma prosedürleri ve işten çıkarma nedenleri hakkında rehberlik."
+      },
+      {
+        "davaAdi": "İş İlişkileri Yönetimi :",
+        "dava": "İşyeri politikaları, çalışma saatleri, izinler ve çalışan hakları gibi iş ilişkileri yönetimi konularında danışmanlık."
+      },
+      {
+        "davaAdi": "Çalışma Koşulları ve Ücretlendirme :",
+        "dava": "Çalışma koşulları, ücret düzenlemeleri, fazla mesai ve tatil hakları konularında rehberlik."
+      },
+      {
+        "davaAdi": "İş Hukuku Davaları :",
+        "dava": "İş hukukuna ilişkin uyuşmazlıkların çözümü için hukuki temsil ve savunma."
+      },
+      {
+        "davaAdi": "Sendika İlişkileri :",
+        "dava": "Sendika ilişkileri ve toplu iş sözleşmeleri konularında hukuki danışmanlık."
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "İş Sözleşmeleri",
@@ -105,6 +132,29 @@
     "kategori": "Ceza Hukuku",
     "id": 3,
     "slug": "ceza-hukuku",
+    "misyon": "MHK Hukuk olarak, müvekkillerine ceza hukuku konularında uzmanlaşmış avukatlar tarafından sunulan hukuki danışmanlık ve savunma hizmetleri sağlamaktadır. Ceza hukuku, suçlamalar, tutuklamalar, soruşturmalar ve mahkeme davalarını içeren karmaşık bir hukuk dalıdır. Hukuki haklarınızı korumak ve adil bir savunma sağlamak için buradayız.",
+    "davalar": [
+      {
+        "davaAdi": "Suç Savunması :",
+        "dava": "Müvekkillerimizin suçlamalara karşı etkili bir savunma yapmalarına yardımcı olmak için uzmanlaşmış avukatlarımız bulunmaktadır."
+      },
+      {
+        "davaAdi": "Tutuklamalar ve Gözaltılar :",
+        "dava": " Tutuklamalar, gözaltılar ve hak ihlalleri durumunda hukuki temsil ve danışmanlık sunuyoruz."
+      },
+      {
+        "davaAdi": "Mahkeme Savunması :",
+        "dava": "Müvekkillerimizi mahkemede temsil ediyor ve savunuyoruz. Mahkeme süreçleri, temyizler ve itirazlar konusunda deneyimliyiz."
+      },
+      {
+        "davaAdi": "Ceza Hukuku Danışmanlığı :",
+        "dava": "Suçlar, cezalar, ceza hukuku süreçleri ve haklarınız hakkında danışmanlık sağlıyoruz."
+      },
+      {
+        "davaAdi": "Ceza Davalarında Uzmanlık :",
+        "dava": "İnternet suçları, uyuşturucu suçları, mülkiyet suçları ve diğer ceza davalarında uzmanız."
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "Ceza Davaları",
@@ -132,6 +182,29 @@
     "kategori": "Gayrimenkul Hukuku",
     "id": 4,
     "slug": "gayrimenkul-hukuku",
+    "misyon": "MHK Hukuk olarak, müvekkillerine gayrimenkul hukuku alanında uzmanlaşmış avukatlar tarafından sunulan kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktadır. Gayrimenkul hukuku, taşınmaz mal mülkiyeti, kiralama, tapu işlemleri ve taşınmazların hukuki sorunları gibi konuları içerir. Gayrimenkul işlemlerinde güvende olmanızı sağlamak için buradayız.",
+    "davalar": [
+      {
+        "davaAdi": "Mülkiyet ve Tapu İşlemleri :",
+        "dava": "Taşınmaz mal edinimi, devri ve tapu işlemleri hakkında hukuki danışmanlık ve rehberlik."
+      },
+      {
+        "davaAdi": "Kiralama Hukuku :",
+        "dava": "Kiracı ve ev sahibi hakları, kira sözleşmeleri ve kira artışları konusunda danışmanlık ve hukuki temsil."
+      },
+      {
+        "davaAdi": "Yatırım ve Geliştirme Projeleri :",
+        "dava": "Gayrimenkul yatırımı, projeleri ve geliştirme işlemleri için hukuki danışmanlık."
+      },
+      {
+        "davaAdi": "Hukuki İhtilaflar ve Uyuşmazlıklar :",
+        "dava": "Tapu anlaşmazlıkları, mülkiyet ihtilafları ve diğer gayrimenkul hukuku davalarında hukuki temsil ve savunma."
+      },
+      {
+        "davaAdi": "Ticari Gayrimenkul İşlemleri :",
+        "dava": "Ticari gayrimenkul satışları, kiralamaları ve işlemleri için hukuki danışmanlık."
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "Taşınmaz Alım-Satım",
@@ -159,6 +232,29 @@
     "kategori": "Şirket Hukuku",
     "id": 5,
     "slug": "sirket-hukuku",
+    "misyon": "MHK Hukuk olarak, iş dünyasına yönelik şirket hukuku alanında uzmanlaşmış avukatlar tarafından sunulan kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktadır. Şirketlerin kuruluşu, yönetimi, anlaşmaları ve yasal uyumluluk gibi konuları içeren şirket hukuku, karmaşık ve değişken bir hukuk dalıdır. İşletmenizin başarısı için buradayız.",
+    "davalar": [
+      {
+        "davaAdi": "Şirket Kuruluşu ve Yönetimi :",
+        "dava": "Şirketlerin kurulması, hissedar anlaşmaları, yönetim konuları ve hisse devirleri gibi işlemlerde hukuki danışmanlık."
+      },
+      {
+        "davaAdi": "Sözleşmeler ve Anlaşmalar :",
+        "dava": "İşletmeler arası sözleşmeler, işbirliği anlaşmaları, lisans anlaşmaları ve tedarik sözleşmeleri konusunda hukuki rehberlik."
+      },
+      {
+        "davaAdi": "Şirket Birleşme ve Devralmaları :",
+        "dava": "Birleşme ve devralma işlemleri, rekabet hukuku uyumluluğu ve hukuki değerlendirmeler."
+      },
+      {
+        "davaAdi": "Yatırım ve Finansman :",
+        "dava": "Yatırım işlemleri, sermaye artırımı, borçlanma ve yatırım fonlarına erişim konularında hukuki danışmanlık."
+      },
+      {
+        "davaAdi": "Şirket Uyumluluğu ve Denetim :",
+        "dava": "Yasal uyumluluk ve iç denetimler konusunda rehberlik, yasal risk analizi ve uyumluluk denetimleri. "
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "Şirket Kuruluşu",
@@ -186,6 +282,29 @@
     "kategori": "Miras Hukuku",
     "id": 6,
     "slug": "miras-hukuku",
+    "misyon": "MHK Hukuk olarak, miras hukuku konularında uzmanlaşmış avukatlar tarafından sunulan kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktadır. Miras, vasiyetnameler, mirasçı hakları ve mirasın dağıtımı gibi konular, hassas ve karmaşık hukuki meseleler içerir. Mirasınızı etkili bir şekilde yönetmek ve korumak için buradayız.",
+    "davalar": [
+      {
+        "davaAdi": "Mirasta Haklar ve İhtilaflar :",
+        "dava": "Mirasçıların hakları, mirasın reddi, mirasın taksimi ve miras hukuku ihtilafları konularında hukuki danışmanlık ve temsil."
+      },
+      {
+        "davaAdi": "Vasiyetnameler ve Miras Planlaması :",
+        "dava": "Vasiyetname hazırlığı, miras planlaması stratejileri ve mirasçıların korunması."
+      },
+      {
+        "davaAdi": "Mirasın Dağıtımı :",
+        "dava": "Mirasın mirasçılar arasında adil bir şekilde dağıtılması ve yasal süreçlerin takibi."
+      },
+      {
+        "davaAdi": "Taşınmaz Mallar ve Emlak İşlemleri :",
+        "dava": "Miras kapsamında taşınmaz malların yönetimi, satışı veya devri konularında hukuki danışmanlık."
+      },
+      {
+        "davaAdi": "Miras Vergisi Uyumluluğu :",
+        "dava": "Miras vergileri ve vergi uyumluluğu konularında hukuki rehberlik."
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "Miras Davaları",

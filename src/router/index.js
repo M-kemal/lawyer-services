@@ -34,4 +34,11 @@ const router = createRouter({
   routes,
 });
 
+//! Router ile yönlendirme yapıldığında, yönlendirilen sayfanın top 0 konumuna gitmesi için
+router.beforeEach((to, from, next) => {
+  // Scroll y konumunu sıfırla
+  window.scrollTo(0, 0);
+  next();
+});
+
 export default router;

@@ -8,17 +8,17 @@
         </h1>
         <div class="my-10">
           <h1
-            class="text-2xl w-2/3 flex items-center justify-center mx-auto leading-relaxed text-center text-gray-100 font-body"
+            class="text-2xl w-[90%] h8:w-2/3 flex items-center justify-center mx-auto leading-relaxed text-center text-gray-100 font-body"
           >
             {{ myData.misyon }}
           </h1>
         </div>
-        <div class="gradientLine mb-20 !w-2/3 mx-auto"></div>
+        <div class="gradientLine mb-20 !w-[90%] h8:!w-2/3 mx-auto"></div>
         <div
           class="flex flex-col k1:flex-row items-center justify-center w-full gap-4 mb-10"
         >
           <div
-            class="myCard w-full h-96 text-gray-950 rounded-3xl"
+            class="myCard w-full h8:h-96 text-gray-950 rounded-3xl"
             v-for="hizmetler in myData.hizmetler"
             :key="hizmetler.id"
           >
@@ -53,7 +53,7 @@
             <AccordionApp
               class="w-full"
               :title="myData.kategori"
-              subtitle="Hangi Davalar Var ?"
+              :subtitle="`${myData.kategori} konusunda hizmetlerimizle yanınızdayız.`"
             >
               <template #detail>
                 <AccordionDetail

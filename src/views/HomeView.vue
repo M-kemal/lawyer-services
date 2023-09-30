@@ -26,17 +26,14 @@
                   'object-cover': slide !== 'bg-4',
                 }"
               />
-              <p
-                v-show="slide === 'bg-2'"
-                class="absolute top-0 left-0 w-full transition duration-300 ease-in-out animate-wiggle"
-              >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                fuga magni voluptate velit ullam facere necessitatibus assumenda
-                doloremque placeat fugiat molestias, cupiditate, perferendis
-                mollitia? Optio ad omnis animi non dicta?
-              </p>
             </div>
           </SlideApp>
+          <p
+            v-show="currentSlide === 2"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-header italic w-full h-full transition duration-300 ease-in-out animate-wiggle text-4xl shadow-md text-firstColor"
+          >
+            Hukuki Destek, Size Güven Verir
+          </p>
         </CarouselApp>
       </div>
       <div class="gradientLine !mt-0 !from-firstColor !to-gray-400"></div>
