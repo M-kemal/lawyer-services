@@ -16,7 +16,6 @@
               class="slide-info absolute top-0 left-0 w-full h-full"
             >
               <!--! TEXT 1 -->
-
               <div
                 v-show="currentSlide === 1"
                 class="absolute top-0 left-2 animate-fadeInSlide bg-gray-950/25 rounded-2xl p-4"
@@ -143,6 +142,11 @@
           </template>
         </FeatureApp>
       </div>
+      <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
+        <template #icon>
+          <LawIcon width="24" height="24" fill="#e1b254" />
+        </template>
+      </FooterApp>
     </div>
   </div>
 </template>
@@ -154,8 +158,10 @@ import CarouselApp from "@/components/Slider/CarouselApp.vue";
 import SlideApp from "@/components/Slider/SlideApp.vue";
 import FeatureApp from "@/components/Feature/FeatureApp.vue";
 import FeatureDetail from "@/components/Feature/FeatureDetail.vue";
+import FooterApp from "@/components/Footer/FooterApp.vue";
 import { ref } from "vue";
 import Avukat from "@/components/data.json";
+import LawIcon from "@/components/icons/LawIcon.vue";
 export default {
   name: "HomeView",
   components: {
@@ -164,6 +170,8 @@ export default {
     SlideApp,
     FeatureApp,
     FeatureDetail,
+    FooterApp,
+    LawIcon,
   },
   setup() {
     const crouselSlide = ["bg-1", "bg-2", "bg-3", "bg-4", "bg-5"];
@@ -175,7 +183,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css">
 /* LEFT */
 .slideInLeft {
   -webkit-animation-name: slideInLeft;

@@ -74,6 +74,11 @@
           </div>
         </div>
       </div>
+      <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
+        <template #icon>
+          <LawIcon width="24" height="24" fill="#e1b254" />
+        </template>
+      </FooterApp>
     </div>
   </div>
 </template>
@@ -86,6 +91,7 @@ import { useRoute } from "vue-router";
 import AccordionApp from "../Accordion/AccordionApp.vue";
 import AccordionDetail from "../Accordion/AccordionDetail.vue";
 import LawIcon from "../icons/LawIcon.vue";
+import FooterApp from "../Footer/FooterApp.vue";
 export default {
   setup() {
     const avukatlar = ref(Avukat);
@@ -102,7 +108,7 @@ export default {
 
     return { myData };
   },
-  components: { HeaderApp, AccordionApp, AccordionDetail, LawIcon },
+  components: { HeaderApp, AccordionApp, AccordionDetail, LawIcon, FooterApp },
 };
 </script>
 

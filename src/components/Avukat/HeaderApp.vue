@@ -39,10 +39,12 @@
             >Fourth Link</a
           >
         </nav>
-        <button
-          class="btn firstbtn h8:my-2 k1:my-0 h8:w-36 hidden h8:flex before:hidden before:h8:flex"
-          data-text="Randevu & İletişim"
-        ></button>
+        <router-link to="/randevu">
+          <button
+            class="btn firstbtn h8:my-2 k1:my-0 h8:w-36 hidden h8:flex before:hidden before:h8:flex"
+            data-text="Randevu & İletişim"
+          ></button>
+        </router-link>
         <!--* Navbar -->
 
         <!--! Toogle Navbar  -->
@@ -90,12 +92,12 @@
               <a href="" class="w-full hover:text-white hover:bg-gray-950 p-4"
                 >Four Link</a
               >
-              <router-link to="/" class="w-full pt-4">
+              <RouterLink to="/randevu" class="w-full pt-4">
                 <button
                   class="btn h8:my-2 k1:my-0 flex w-full"
                   data-text="Randevu & İletişim"
                 ></button>
-              </router-link>
+              </RouterLink>
             </div>
           </nav>
         </div>
