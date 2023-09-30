@@ -3,13 +3,17 @@
     <div class="CostumContainer">
       <HeaderApp />
       <div class="flex flex-col items-start justify-center mt-20">
-        <h1 class="heading1 !text-center w-full !text-yellow-400">
+        <h1 class="heading1 !text-center !my-0 w-full !text-firstColor">
           {{ myData.kategori }}
         </h1>
         <div class="my-10">
-          <h1>{{ myData.misyon }}</h1>
+          <h1
+            class="text-2xl w-2/3 flex items-center justify-center mx-auto leading-relaxed text-center text-gray-100 font-body"
+          >
+            {{ myData.misyon }}
+          </h1>
         </div>
-        <div class="gradientLine mb-20 !w-1/2 mx-auto"></div>
+        <div class="gradientLine mb-20 !w-2/3 mx-auto"></div>
         <div
           class="flex flex-col k1:flex-row items-center justify-center w-full gap-4 mb-10"
         >
@@ -23,18 +27,20 @@
                 {{ hizmetler.baslik }}
               </p>
 
-              <p class="text-lg font-medium mb-4">{{ hizmetler.aciklama }}</p>
+              <p class="text-xl font-medium mb-4 font-body">
+                {{ hizmetler.aciklama }}
+              </p>
               <h4 class="font-bold text-lg mb-4 underline underline-offset-4">
                 Detaylar
               </h4>
-              <div class="">
+              <div class="font-body text-lg">
                 <p class="mr-1 mb-0.5">
                   <span class="">Süre </span> :
                   {{ hizmetler.sure }}
                 </p>
 
                 <div v-for="detay in hizmetler.detaylar" :key="detay.id">
-                  <p>{{ detay }}</p>
+                  <p class="">{{ detay }}</p>
                 </div>
               </div>
             </div>
@@ -43,17 +49,6 @@
         <div
           class="my-6 text-white w-full flex justify-between flex-wrap gap-4"
         >
-          <!-- <div
-            class="davalar flex"
-            v-for="daha in myData.davalar"
-            :key="daha.id"
-          >
-            <div class="w-full flex flex-col">
-              <h1 class="font-bold text-xl">{{ daha.davaAdi }}</h1>
-              <div class="gradientLine mb-4"></div>
-              <p class="">{{ daha.dava }}</p>
-            </div>
-          </div> -->
           <div class="Accordion w-full myCard pb-20">
             <AccordionApp
               class="w-full"
@@ -69,6 +64,11 @@
                   class="w-full"
                 >
                 </AccordionDetail>
+                <div class="">
+                  <LawIcon
+                    class="absolute left-0 top-0 w-full h-full opacity-10 pointer-events-none"
+                  ></LawIcon>
+                </div>
               </template>
             </AccordionApp>
           </div>
@@ -85,6 +85,7 @@ import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import AccordionApp from "../Accordion/AccordionApp.vue";
 import AccordionDetail from "../Accordion/AccordionDetail.vue";
+import LawIcon from "../icons/LawIcon.vue";
 export default {
   setup() {
     const avukatlar = ref(Avukat);
@@ -101,7 +102,7 @@ export default {
 
     return { myData };
   },
-  components: { HeaderApp, AccordionApp, AccordionDetail },
+  components: { HeaderApp, AccordionApp, AccordionDetail, LawIcon },
 };
 </script>
 

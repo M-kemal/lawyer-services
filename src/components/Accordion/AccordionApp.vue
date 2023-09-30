@@ -1,12 +1,12 @@
 <template>
   <div class="max-w-screen-xl mx-auto px-5 min-h-sceen">
     <div class="flex flex-col items-center">
-      <h2 class="heading1 !mb-0 mt-5 !text-black">{{ title }}</h2>
+      <h2 class="heading1 !mb-0 !pt-20 !text-black">{{ title }}</h2>
       <p class="text-neutral-500 text-2xl mt-6 font-semibold font-header">
         {{ subtitle }}
       </p>
     </div>
-    <div class="grid divide-y divide-yellow-500 max-w-2xl mx-auto mt-8">
+    <div class="grid divide-y divide-firstColor max-w-2xl mx-auto mt-8">
       <slot name="detail" />
     </div>
   </div>

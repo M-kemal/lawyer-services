@@ -39,53 +39,62 @@
           </SlideApp>
         </CarouselApp>
       </div>
-      <div class="gradientLine !mt-0 !from-yellow-400 !to-gray-400"></div>
+      <div class="gradientLine !mt-0 !from-firstColor !to-gray-400"></div>
       <div class="">
-        <FeatureApp>
+        <FeatureApp class="font-body">
           <template #header>
-            <h1 class="heading1 !text-center !text-yellow-400">
+            <h1 class="heading1 !text-center !text-firstColor">
               Firmamız Hakkında
             </h1>
-            <p class="font-medium text-lg">
-              MHK Hukuk, <br />
-              yıllardır Ankara ve çevresinde hukuk alanında müşterilerimize
-              profesyonel destek sunan bir hukuk danışmanlığı firmasıdır. <br />
+            <p
+              class="font-medium text-2xl text-gray-200 w-full h8:w-2/3 flex flex-col items-center justify-center mx-auto italic leading-relaxed"
+            >
+              <span class="font-bold">MHK Hukuk,</span>
+              Ankara ve çevresinde hukuk alanında yıllardır müşterilerilerine
+              profesyonel destek sunan bir hukuk danışmanlığı firmasıdır.
               Müşteri odaklı yaklaşımımız, hukuki ihtiyaçlarınızı anlamamıza ve
               size özel çözümler sunmamıza olanak tanır.
             </p>
 
-            <h2 class="heading2 !text-center mt-16 !text-yellow-400">
-              Neden Biz?
+            <h2 class="heading1 !text-center mt-16 !text-firstColor">
+              Neden Biz ?
             </h2>
             <div
               class="grid h4:grid-cols-1 h8:grid-cols-auto my-20 gap-2 font-semibold text-sm"
             >
               <p class="flex flex-col">
-                <span class="heading3 !mb-2 !text-center !text-yellow-400"
-                  >Deneyim ve Uzmanlık
+                <span class="heading3 !mb-2 !text-center !text-firstColor"
+                  >► Deneyim ve Uzmanlık
                 </span>
-                Aile hukuku, iş hukuku, ceza hukuku ve daha fazlası konusundaki
-                uzmanlarımızla size en iyi hukuki çözümleri sunarız.
+                <span class="text-gray-200 font-medium text-lg">
+                  Aile hukuku, iş hukuku, ceza hukuku ve daha fazlası
+                  konusundaki uzmanlarımızla size en iyi hukuki çözümleri
+                  sunarız.
+                </span>
               </p>
               <p class="flex flex-col">
-                <span class="heading3 !mb-2 !text-center !text-yellow-400"
-                  >Kişiselleştirilmiş Hizmet
+                <span class="heading3 !mb-2 !text-center !text-firstColor"
+                  >► Kişiselleştirilmiş Hizmet
                 </span>
-                Her müşterinin durumu farklıdır ve bu nedenle yaklaşımımız da
-                farklıdır. Size özel, kişiselleştirilmiş hukuki çözümler
-                sunarız.
+                <span class="text-gray-200 font-medium text-lg">
+                  Her müşterinin durumu farklıdır ve bu nedenle yaklaşımımız da
+                  farklıdır. Size özel, kişiselleştirilmiş hukuki çözümler
+                  sunarız.
+                </span>
               </p>
               <p class="flex flex-col">
-                <span class="heading3 !mb-2 !text-center !text-yellow-400"
-                  >Hızlı ve Etkili Çözümler
+                <span class="heading3 !mb-2 !text-center !text-firstColor"
+                  >► Hızlı ve Etkili Çözümler
                 </span>
-                Sorunlarınıza hızlı ve etkili bir şekilde yaklaşırız. Hukuki
-                süreçlerden, sizin için en iyi sonuçları elde etmek için çaba
-                sarf ederiz.
+                <span class="text-gray-200 font-medium text-lg">
+                  Sorunlarınıza hızlı ve etkili bir şekilde yaklaşırız. Hukuki
+                  süreçlerden, sizin için en iyi sonuçları elde etmek için çaba
+                  sarf ederiz.
+                </span>
               </p>
             </div>
-            <div class="gradientLine !from-yellow-400 !to-gray-400"></div>
-            <h1 class="heading2 !text-center mt-10 !text-yellow-400">
+            <div class="gradientLine !from-firstColor !to-gray-400"></div>
+            <h1 class="heading2 !text-center mt-10 !text-firstColor">
               Öne Çıkan Hizmetlerimiz
             </h1>
           </template>

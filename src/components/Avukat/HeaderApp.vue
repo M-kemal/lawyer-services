@@ -20,22 +20,22 @@
 
         <!--* Navbar -->
         <nav
-          class="k1:mr-auto h8:ml-4 h8:py-1 h8:pl-4 h8:border-l h8:border-yellow-400 hidden h8:flex flex-wrap items-center text-base justify-center uppercase my-4 k1:my-0"
+          class="k1:mr-auto h8:ml-4 h8:py-1 h8:pl-4 h8:border-l h8:border-yellow-400 hidden h8:flex flex-wrap items-center text-base justify-center uppercase my-4 k1:my-0 text-firstColor"
         >
           <a
-            class="mr-5 cursor-pointer text-yellow-400 hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
             >First Link</a
           >
           <a
-            class="mr-5 cursor-pointer text-yellow-400 hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
             >Second Link</a
           >
           <a
-            class="mr-5 cursor-pointer text-yellow-400 hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
             >Third Link</a
           >
           <a
-            class="mr-5 cursor-pointer text-yellow-400 hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
             >Fourth Link</a
           >
         </nav>
@@ -73,7 +73,7 @@
           </button>
           <nav
             v-if="showMenu"
-            class="flex flex-col bg-black/80 text-yellow-300 w-full absolute top-16 mt-1.5 p-2 rounded-md"
+            class="flex flex-col bg-black/80 text-firstColor w-full absolute top-16 mt-1.5 p-2 rounded-md"
           >
             <div
               class="flex flex-col w-full p-6 h-full divide-y divide-yellow-400 space-y-2"

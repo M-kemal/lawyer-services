@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
-  <div class="scrollTop fixed bottom-10 right-5">
+  <div class="scrollTop fixed bottom-10 right-5 z-50">
     <button
       @click="scrollToTop"
       class="btn w-10 h-10 !rounded-xl shadow-yellow-500 shadow-md"

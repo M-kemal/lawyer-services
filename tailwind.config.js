@@ -51,6 +51,7 @@ module.exports = {
         innovation: "#EDB407",
         access: "#FB6640",
         communication: "#F82553",
+        firstColor: "#e1b254",
       },
       keyframes: {
         wiggle: {
@@ -63,10 +64,15 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 100 },
         },
+        rotate: {
+          "0%": { transform: "rotate(0)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out",
         fadeIn: "fadeIn 0.2s ease-in-out forwards",
+        rotate: "rotate 0.6s ease-in-out both",
       },
     },
   },
