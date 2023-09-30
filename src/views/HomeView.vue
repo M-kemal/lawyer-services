@@ -7,7 +7,7 @@
           :pagination="false"
           :navigation="false"
           :startAutoPlay="true"
-          class="h-[25rem] k12:h-[35rem] w-full relative"
+          class="h-[25rem] k12:h-[41rem] w-full relative"
           v-slot="{ currentSlide }"
         >
           <SlideApp v-for="(slide, index) in crouselSlide" :key="index">
@@ -15,6 +15,49 @@
               v-show="currentSlide === index + 1"
               class="slide-info absolute top-0 left-0 w-full h-full"
             >
+              <!--! TEXT 1 -->
+
+              <div
+                v-show="currentSlide === 1"
+                class="absolute top-0 left-2 animate-fadeInSlide bg-gray-950/25 rounded-2xl p-4"
+              >
+                <p
+                  class="font-header italic h8:text-4xl animate-fadeInSlide text-gray-200 p-2 rounded-lg"
+                >
+                  MHK Hukuk ,
+                </p>
+                <p
+                  class="font-header italic h8:text-4xl slideInLeft text-gray-200 p-2 rounded-lg"
+                >
+                  alanında uzman avukatlarıyla yanınızda.
+                </p>
+                <div class="h8:gradientLine h8:animate-leftLine"></div>
+              </div>
+              <!--! TEXT 2 -->
+              <div
+                v-show="currentSlide === 2"
+                class="absolute top-0 right-0 slideInDown"
+              >
+                <p
+                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-gray-950/25 p-10 rounded-lg"
+                >
+                  Hukuki Destek, Size Güven Verir
+                </p>
+                <div class="gradientLine animate-leftLine"></div>
+              </div>
+              <!--! TEXT 3 -->
+              <div
+                v-show="currentSlide === 3"
+                class="absolute bottom-10 left-0"
+              >
+                <p
+                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-gray-950/25 p-10 rounded-lg"
+                >
+                  Sorunları Çözmek İçin Buradayız . . .
+                </p>
+                <div class="gradientLine animate-leftLine"></div>
+              </div>
+              <!--? IMG -->
               <img
                 :src="require(`../assets/${slide}.jpg`)"
                 :alt="slide"
@@ -28,12 +71,6 @@
               />
             </div>
           </SlideApp>
-          <p
-            v-show="currentSlide === 2"
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-header italic w-full h-full transition duration-300 ease-in-out animate-wiggle text-4xl shadow-md text-firstColor"
-          >
-            Hukuki Destek, Size Güven Verir
-          </p>
         </CarouselApp>
       </div>
       <div class="gradientLine !mt-0 !from-firstColor !to-gray-400"></div>
@@ -74,7 +111,7 @@
                   >► Kişiselleştirilmiş Hizmet
                 </span>
                 <span class="text-gray-200 font-medium text-lg">
-                  Her müşterinin durumu farklıdır ve bu nedenle yaklaşımımız da
+                  Her müvekkilin durumu farklıdır ve bu nedenle yaklaşımımız da
                   farklıdır. Size özel, kişiselleştirilmiş hukuki çözümler
                   sunarız.
                 </span>
@@ -137,3 +174,70 @@ export default {
   },
 };
 </script>
+
+<style>
+/* LEFT */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* Top */
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+</style>

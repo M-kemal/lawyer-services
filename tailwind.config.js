@@ -64,15 +64,26 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 100 },
         },
+        fadeInSlide: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 100 },
+        },
         rotate: {
           "0%": { transform: "rotate(0)" },
           "100%": { transform: "rotate(360deg)" },
+        },
+        leftLine: {
+          "0%": { transform: "scaleX(0.4)", "transform-origin": "0% 0%" },
+          "100%": { transform: "scaleX(1)", "transform-origin": "0% 0%" },
         },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out",
         fadeIn: "fadeIn 0.2s ease-in-out forwards",
+        fadeInSlide: "fadeIn 0.7s ease-in-out forwards",
         rotate: "rotate 0.6s ease-in-out both",
+        leftLine:
+          "leftLine 1.7s  cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
       },
     },
   },
