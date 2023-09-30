@@ -3,6 +3,33 @@
     "kategori": "Aile Hukuku",
     "id": 1,
     "slug": "aile-hukuku",
+    "misyon": "MHK Hukuk olarak, aile hukuku alanında uzmanlaşmış deneyimli avukatlarımızla, ailelerin karşılaştığı hukuki sorunların çözümüne yardımcı oluyoruz. Aile hukuku, aile içi ilişkileri, boşanma, velayet, mal paylaşımı, nafaka, vesayet, evlat edinme ve daha birçok konuyu içerir. Aile hukukundaki karmaşık meseleleri anlamak ve çözmek için size profesyonel bir yaklaşım sunuyoruz.",
+    "davalar": [
+      {
+        "davaAdi": "Boşanma ve Ayrılık Davaları :",
+        "dava": "Evliliklerin sona ermesi zor bir süreç olabilir. Boşanma veya ayrılık davalarında size hukuki rehberlik ve destek sunuyoruz. Boşanma, mal paylaşımı, velayet düzenlemeleri ve nafaka gibi konularda size yardımcı oluyoruz."
+      },
+      {
+        "davaAdi": "Velayet ve Çocuk Hakları :",
+        "dava": "Çocukların çıkarlarını korumak her zaman önceliğimizdir. Velayet, çocuk ziyaretleri ve çocuk hakları gibi meselelerde sizin için en iyi çözümü arıyoruz."
+      },
+      {
+        "davaAdi": "Mal Paylaşımı ve Miras Hukuku :",
+        "dava": "Mal paylaşımı ve miras konuları hassas olabilir. Haklarınızı korumak ve adaletin sağlanmasını sağlamak için size yardımcı oluyoruz."
+      },
+      {
+        "davaAdi": "Nafaka :",
+        "dava": "Nafaka davaları, gelir düzeyi, ihtiyaçlar ve diğer faktörlere dayalı olarak hesaplanır. Nafaka almak veya ödemekle ilgili konularda size rehberlik ediyoruz."
+      },
+      {
+        "davaAdi": "Evlat Edinme ve Vesayet :",
+        "dava": "Evlat edinme veya vesayet işlemleri karmaşık olabilir. Bu süreçlerde size yol gösteriyoruz ve gerekli yasal adımları atmanıza yardımcı oluyoruz."
+      },
+      {
+        "davaAdi": "Aile İçi Anlaşmazlıkların Çözümü :",
+        "dava": "Aileler arasında anlaşmazlıklar sıkça karşılaşılır. Uyuşmazlıkları müzakere ve alternatif çözüm yöntemleriyle çözmeye çalışıyoruz."
+      }
+    ],
     "hizmetler": [
       {
         "baslik": "Boşanma ve Ayrılık",

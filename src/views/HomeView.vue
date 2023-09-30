@@ -38,10 +38,11 @@
               Firmamız Hakkında
             </h1>
             <p class="font-medium text-lg">
-              MHK Hukuk, yıllardır Ankara ve çevresinde hukuk alanında
-              müşterilerimize profesyonel destek sunan bir hukuk danışmanlığı
-              firmasıdır. Müşteri odaklı yaklaşımımız, hukuki ihtiyaçlarınızı
-              anlamamıza ve size özel çözümler sunmamıza olanak tanır.
+              MHK Hukuk, <br />
+              yıllardır Ankara ve çevresinde hukuk alanında müşterilerimize
+              profesyonel destek sunan bir hukuk danışmanlığı firmasıdır. <br />
+              Müşteri odaklı yaklaşımımız, hukuki ihtiyaçlarınızı anlamamıza ve
+              size özel çözümler sunmamıza olanak tanır.
             </p>
 
             <h2 class="heading2 !text-center mt-16 !text-yellow-400">

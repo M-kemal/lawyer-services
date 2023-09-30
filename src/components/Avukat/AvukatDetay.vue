@@ -1,11 +1,14 @@
 <template>
-  <div class="bg-black h-full k1:h-screen text-white">
+  <div class="bg-black h-full text-white">
     <div class="CostumContainer">
       <HeaderApp />
       <div class="flex flex-col items-start justify-center mt-20">
         <h1 class="heading1 !text-center w-full !text-yellow-400">
           {{ myData.kategori }}
         </h1>
+        <div class="my-10">
+          <h1>{{ myData.misyon }}</h1>
+        </div>
         <div class="gradientLine mb-20 !w-1/2 mx-auto"></div>
         <div
           class="flex flex-col k1:flex-row items-center justify-center w-full gap-4 mb-10"
@@ -15,15 +18,17 @@
             v-for="hizmetler in myData.hizmetler"
             :key="hizmetler.id"
           >
-            <div class="flex flex-col p-10">
-              <p class="heading2 !text-gray-950">{{ hizmetler.baslik }}</p>
+            <div class="flex flex-col justify-between p-10">
+              <p class="heading2 !text-gray-950 border-b p-2 border-b-gray-950">
+                {{ hizmetler.baslik }}
+              </p>
 
               <p class="text-lg font-medium mb-4">{{ hizmetler.aciklama }}</p>
               <h4 class="font-bold text-lg mb-4 underline underline-offset-4">
                 Detaylar
               </h4>
-              <div class="text-base">
-                <p class="mr-1">
+              <div class="">
+                <p class="mr-1 mb-0.5">
                   <span class="">Süre </span> :
                   {{ hizmetler.sure }}
                 </p>
@@ -33,6 +38,39 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div
+          class="my-6 text-white w-full flex justify-between flex-wrap gap-4"
+        >
+          <!-- <div
+            class="davalar flex"
+            v-for="daha in myData.davalar"
+            :key="daha.id"
+          >
+            <div class="w-full flex flex-col">
+              <h1 class="font-bold text-xl">{{ daha.davaAdi }}</h1>
+              <div class="gradientLine mb-4"></div>
+              <p class="">{{ daha.dava }}</p>
+            </div>
+          </div> -->
+          <div class="Accordion w-full myCard pb-20">
+            <AccordionApp
+              class="w-full"
+              :title="myData.kategori"
+              subtitle="Hangi Davalar Var ?"
+            >
+              <template #detail>
+                <AccordionDetail
+                  v-for="dava in myData.davalar"
+                  :key="dava.id"
+                  :title="dava.davaAdi"
+                  :answer="dava.dava"
+                  class="w-full"
+                >
+                </AccordionDetail>
+              </template>
+            </AccordionApp>
           </div>
         </div>
       </div>
@@ -45,6 +83,8 @@ import HeaderApp from "@/components/Avukat/HeaderApp.vue";
 import Avukat from "@/components/data.json";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
+import AccordionApp from "../Accordion/AccordionApp.vue";
+import AccordionDetail from "../Accordion/AccordionDetail.vue";
 export default {
   setup() {
     const avukatlar = ref(Avukat);
@@ -61,7 +101,7 @@ export default {
 
     return { myData };
   },
-  components: { HeaderApp },
+  components: { HeaderApp, AccordionApp, AccordionDetail },
 };
 </script>
 

@@ -1,10 +1,10 @@
 <template>
-  <div class="py-5">
+  <div class="py-3">
     <details class="group">
       <summary
         class="flex justify-between items-center font-medium cursor-pointer list-none"
       >
-        <div class="heading4 !mt-0 !mb-0">{{ title }}</div>
+        <div class="heading4 !mt-0 !mb-0 !text-black">{{ title }}</div>
         <span class="transition group-open:rotate-180">
           <svg
             fill="none"
