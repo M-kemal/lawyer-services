@@ -11,10 +11,10 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="w-full mx-auto h-[45rem] mb-20"
+          class="w-full mx-auto h-[47rem] mb-20"
         ></iframe>
         <form
-          @submit.prevent="onSubmit"
+          @submit.prevent="submitForm"
           class="px-5 py-5 mx-auto absolute top-0 right-0"
         >
           <div class="bg-white rounded-lg p-8 flex flex-col z-10 shadow-md">
@@ -31,23 +31,25 @@
                 label="Adınız Soyadınız"
                 placeholder="Ad soyad"
                 value=""
-                required
+                v-model.trim="ad"
               />
+
               <InputText
                 type="tel"
                 match="tel"
                 label="Telefon Numaranız"
                 placeholder="0 555 55 55 "
                 value=""
-                required
+                v-model.trim="tel"
               />
+
               <InputText
                 type="email"
                 match="email"
                 label="Email Adresiniz"
                 placeholder="example@gmail.com "
                 value=""
-                required
+                v-model.trim="mail"
               />
             </div>
             <div class="relative mb-4">
@@ -57,8 +59,9 @@
                 rows="4"
                 placeholder="Hangi konuda destek istersiniz ve size ne zaman ulaşalım ?"
                 value=""
-                required
+                v-model.trim="msj"
               />
+              <div v-if="errorMessage">Hataaaaa!</div>
             </div>
             <button data-text="Gönder" class="btn" type="submit">Gönder</button>
             <p class="text-xs text-gray-500 mt-3">
@@ -72,20 +75,36 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import InputText from "../Forms/InputText.vue";
 import TextArea from "../Forms/TextArea.vue";
 import HeaderApp from "./HeaderApp.vue";
 
 export default {
   setup() {
-    const onSubmit = (event) => {
-      event.preventDefault(); // Sayfanın yenilenmesini engeller
+    const ad = ref("");
+    const mail = ref("");
+    const tel = ref(null);
+    const msj = ref("");
 
-      // Formun gönderim işlemini burada gerçekleştirin
-      // formData verilerini kullanarak istediğiniz işlemleri yapabilirsiniz
+    const errorMessage = ref(false);
+
+    const submitForm = () => {
+      if (
+        ad.value === "" ||
+        mail.value === "" ||
+        tel.value === "" ||
+        msj.value === ""
+      ) {
+        errorMessage.value = true;
+        setTimeout(() => {
+          errorMessage.value = false;
+          return; // Boş alanlar varsa  direkt hata çıkar
+        }, 2000);
+      }
     };
 
-    return { onSubmit };
+    return { submitForm, ad, mail, tel, msj, errorMessage };
   },
   components: { InputText, TextArea, HeaderApp },
 };
