@@ -3,8 +3,30 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
+  <div class="scrollTop fixed bottom-10 right-5">
+    <button
+      @click="scrollToTop"
+      class="btn w-10 h-10 !rounded-xl shadow-yellow-500 shadow-md"
+      data-text="▲"
+    ></button>
+  </div>
   <router-view />
 </template>
+
+<script>
+export default {
+  setup() {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    return { scrollToTop };
+  },
+};
+</script>
 
 <style>
 /* #app {
