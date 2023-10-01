@@ -11,8 +11,10 @@
       :placeholder="placeholder"
       :value="value"
       v-bind="$attrs"
+      @input="$emit('update:value', $event.target.value)"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-text-[rgb(30,41,59)] focus:border-text-[rgb(30,41,59)] block w-full p-2.5 dark:bg-[rgb(30,41,59)] dark:border-gray-600 dark:placeholder-gray-400 dark:text-[rgb(98,123,164)] dark:focus:ring-text-[rgb(30,41,59)] dark:focus:border-text-[rgb(30,41,59)]"
     />
+    <!-- <p>{{ value }}</p> -->
   </div>
   <div v-if="isCheck === 'checkbox'" class="flex items-center h-5">
     <input

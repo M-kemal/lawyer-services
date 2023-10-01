@@ -30,8 +30,8 @@
                 match="name"
                 label="Adınız Soyadınız"
                 placeholder="Ad soyad"
-                value=""
-                v-model.trim="ad"
+                :value="ad"
+                v-model:value="ad"
               />
 
               <InputText
@@ -39,8 +39,8 @@
                 match="tel"
                 label="Telefon Numaranız"
                 placeholder="0 555 55 55 "
-                value=""
-                v-model.trim="tel"
+                :value="tel"
+                v-model:value="tel"
               />
 
               <InputText
@@ -48,18 +48,17 @@
                 match="email"
                 label="Email Adresiniz"
                 placeholder="example@gmail.com "
-                value=""
-                v-model.trim="mail"
+                :value="mail"
+                v-model:value="mail"
               />
             </div>
             <div class="relative mb-4">
               <TextArea
-                mactch="area"
+                match="area"
                 label="Mesajınız"
                 rows="4"
                 placeholder="Hangi konuda destek istersiniz ve size ne zaman ulaşalım ?"
-                value=""
-                v-model.trim="msj"
+                v-model:value="msj"
               />
               <div v-if="errorMessage">Hataaaaa!</div>
             </div>
@@ -90,17 +89,21 @@ export default {
     const errorMessage = ref(false);
 
     const submitForm = () => {
+      // Tüm inputlar dolu mu kontrol edelim
       if (
         ad.value === "" ||
         mail.value === "" ||
-        tel.value === "" ||
+        tel.value === null ||
         msj.value === ""
       ) {
         errorMessage.value = true;
         setTimeout(() => {
           errorMessage.value = false;
-          return; // Boş alanlar varsa  direkt hata çıkar
         }, 2000);
+      } else {
+        // Tüm inputlar doluysa formu gönder
+        // Burada form gönderme işlemini ekleyebilirsiniz
+        // Örneğin: Axios veya fetch kullanarak sunucuya veri gönderme
       }
     };
 
