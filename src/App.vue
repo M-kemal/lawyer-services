@@ -3,7 +3,10 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
-  <div class="scrollTop fixed bottom-10 right-5 z-50">
+  <div
+    class="scrollTop fixed bottom-10 right-5 z-50"
+    :class="{ hidden: isHidden }"
+  >
     <button
       @click="scrollToTop"
       class="btn w-10 h-10 !rounded-xl shadow-yellow-500 shadow-md"
@@ -14,6 +17,8 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   setup() {
     const scrollToTop = () => {
@@ -22,8 +27,14 @@ export default {
         behavior: "smooth",
       });
     };
+    const isHidden = ref(true);
 
-    return { scrollToTop };
+    window.addEventListener("scroll", () => {
+      // Sayfa scrollu 200 pikselden daha fazla ise düğmeyi görünür yap
+      isHidden.value = window.scrollY < 200;
+    });
+
+    return { scrollToTop, isHidden };
   },
 };
 </script>
@@ -49,4 +60,69 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 } */
+
+/* LEFT */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* Top */
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 </style>

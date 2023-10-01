@@ -3,6 +3,23 @@
     <HeaderApp class="" />
     <section class="text-gray-600 body-font CostumContainer relative bg-black">
       <div
+        v-if="succesMessage"
+        class="absolute left-5 top-5 z-30 animate-fadeInSlide"
+      >
+        <BaseSuccess
+          name="Randevu Oluşturuldu"
+          message="Ana Sayfaya yönlendiriyoruz..."
+          class="!text-firstColor bg-gray-950/50"
+        >
+          <template #icon>
+            <SuccessIcon
+              title="Success"
+              class="bg-firstColor text-black rounded-lg p-1 slideInDown"
+            ></SuccessIcon>
+          </template>
+        </BaseSuccess>
+      </div>
+      <div
         class="w-full h-full bg-gray-950 flex items-center justify-between mt-5"
       >
         <iframe
@@ -24,7 +41,7 @@
             <p class="leading-relaxed mb-5 text-gray-600">
               Sizi arayalım , randevunuzu oluşturalım.
             </p>
-            <div class="relative mb-4">
+            <div class="relative">
               <InputText
                 type="text"
                 match="name"
@@ -52,7 +69,7 @@
                 v-model:value="mail"
               />
             </div>
-            <div class="relative mb-4">
+            <div class="relative">
               <TextArea
                 match="area"
                 label="Mesajınız"
@@ -60,9 +77,17 @@
                 placeholder="Hangi konuda destek istersiniz ve size ne zaman ulaşalım ?"
                 v-model:value="msj"
               />
-              <div v-if="errorMessage">Hataaaaa!</div>
+              <div v-if="errorMessage" class="mb-2">
+                <AlertError name="Hata" message="Bilgileri eksiksiz giriniz!">
+                  <template #icon>
+                    <AlertIcon title="Alert"></AlertIcon>
+                  </template>
+                </AlertError>
+              </div>
             </div>
-            <button data-text="Gönder" class="btn" type="submit">Gönder</button>
+            <button data-text="Gönder" class="btn !py-4" type="submit">
+              Gönder
+            </button>
             <p class="text-xs text-gray-500 mt-3">
               Sizinle Güçlüyüz, Hukukla Güçlüsünüz.
             </p>
@@ -78,6 +103,11 @@ import { ref } from "vue";
 import InputText from "../Forms/InputText.vue";
 import TextArea from "../Forms/TextArea.vue";
 import HeaderApp from "./HeaderApp.vue";
+import AlertError from "../Utilities/AlertError.vue";
+import AlertIcon from "../icons/AlertIcon.vue";
+import SuccessIcon from "../icons/SuccessIcon.vue";
+import { useRouter } from "vue-router";
+import BaseSuccess from "../Utilities/BaseSuccess.vue";
 
 export default {
   setup() {
@@ -87,6 +117,9 @@ export default {
     const msj = ref("");
 
     const errorMessage = ref(false);
+    const succesMessage = ref(false);
+
+    const router = useRouter();
 
     const submitForm = () => {
       // Tüm inputlar dolu mu kontrol edelim
@@ -104,12 +137,24 @@ export default {
         // Tüm inputlar doluysa formu gönder
         // Burada form gönderme işlemini ekleyebilirsiniz
         // Örneğin: Axios veya fetch kullanarak sunucuya veri gönderme
+        succesMessage.value = true;
+        setTimeout(() => {
+          router.push("/");
+        }, 3000);
       }
     };
 
-    return { submitForm, ad, mail, tel, msj, errorMessage };
+    return { submitForm, ad, mail, tel, msj, errorMessage, succesMessage };
   },
-  components: { InputText, TextArea, HeaderApp },
+  components: {
+    InputText,
+    TextArea,
+    HeaderApp,
+    AlertError,
+    AlertIcon,
+    BaseSuccess,
+    SuccessIcon,
+  },
 };
 </script>
 
