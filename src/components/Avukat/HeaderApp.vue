@@ -65,18 +65,24 @@
               viewBox="0 0 17 14"
             >
               <path
+                v-show="!showMenu"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
+              <path
+                v-show="showMenu"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1L15 15M1 15L15 1"
+              />
             </svg>
           </button>
-          <nav
-            v-if="showMenu"
-            class="flex flex-col bg-black/80 text-firstColor w-full absolute top-16 mt-1.5 p-2 rounded-md"
-          >
+          <nav class="nav" :class="{ 'open': showMenu }">
             <div
               class="flex flex-col w-full p-6 h-full divide-y divide-yellow-400 space-y-2"
             >
@@ -109,9 +115,9 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from 'vue';
 
-import LawIcon from "../icons/LawIcon.vue";
+import LawIcon from '../icons/LawIcon.vue';
 
 export default {
   components: { LawIcon },
@@ -146,5 +152,22 @@ export default {
   .mkk::after {
     display: flex;
   }
+}
+
+nav.nav {
+  background-color: #000000;
+
+  position: fixed;
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.open {
+  transform: translateX(0);
 }
 </style>

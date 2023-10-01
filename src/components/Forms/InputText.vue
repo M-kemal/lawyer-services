@@ -1,8 +1,9 @@
 <template>
   <div v-if="!isCheck" class="mb-6 flex-grow w-96">
     <label
+      :style="{ color: labelColor }"
       :for="match"
-      class="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgb(30,41,59)] first-letter:capitalize"
+      class="block mb-2 text-sm font-medium text-gray-200 first-letter:capitalize"
       >{{ label }}</label
     >
     <input
@@ -65,6 +66,10 @@ export default {
     href: {
       type: String,
       default: "",
+    },
+    labelColor: {
+      type: String,
+      default: "black",
     },
   },
   setup() {

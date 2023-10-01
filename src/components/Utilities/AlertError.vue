@@ -3,6 +3,7 @@
     <div
       class="flex items-center p-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
       role="alert"
+      v-bind="$attrs"
     >
       <div class="icon flex items-center">
         <slot name="icon"></slot>

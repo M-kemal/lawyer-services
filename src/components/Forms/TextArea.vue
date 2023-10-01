@@ -2,6 +2,7 @@
   <div class="mb-6 flex-grow w-96">
     <label
       :for="match"
+      :style="{ color: labelColor }"
       class="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgb(30,41,59)]"
       >{{ label }}</label
     >
@@ -42,6 +43,10 @@ export default {
     value: {
       type: String,
       default: "",
+    },
+    labelColor: {
+      type: [String, Number],
+      default: "black",
     },
   },
   setup() {
