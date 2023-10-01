@@ -1,41 +1,52 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "home",
+    path: '/',
+    name: 'home',
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
+    path: '/about',
+    name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+      import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
   {
-    path: "/hizmetlerimiz/:slug",
-    name: "hizmetlerimiz",
+    path: '/hizmetler/:slug',
+    name: 'hizmetler',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../components/Avukat/AvukatDetay.vue"
+        /* webpackChunkName: "about" */ '../components/Avukat/AvukatDetay.vue'
       ),
   },
   {
-    path: "/randevu",
-    name: "randevu",
+    path: '/randevu',
+    name: 'randevu',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../components/Avukat/RandevuApp.vue"
+        /* webpackChunkName: "about" */ '../components/Avukat/RandevuApp.vue'
+      ),
+  },
+  {
+    path: '/hizmetlerimiz',
+    name: 'hizmetlerimiz',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ '../components/Avukat/HizmetPage.vue'
       ),
   },
 ];

@@ -1,6 +1,6 @@
 <template>
   <div class="p-2 sm:w-1/2 w-full">
-    <router-link :to="'/hizmetlerimiz/' + slug">
+    <router-link :to="'/hizmetler/' + slug">
       <div
         class="rounded flex p-4 h-full items-center duration-150 ease-in-out group"
       >
@@ -32,7 +32,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Text",
+      default: 'Text',
     },
     slug: {
       type: String,

@@ -17,19 +17,19 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 export default {
   setup() {
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     };
     const isHidden = ref(true);
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       // Sayfa scrollu 200 pikselden daha fazla ise düğmeyi görünür yap
       isHidden.value = window.scrollY < 200;
     });
@@ -56,10 +56,10 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-
+*/
 nav a.router-link-exact-active {
-  color: #42b983;
-} */
+  color: #42b983 !important;
+}
 
 /* LEFT */
 .slideInLeft {

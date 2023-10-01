@@ -22,9 +22,10 @@
         <nav
           class="k1:mr-auto h8:ml-4 h8:py-1 h8:pl-4 h8:border-l h8:border-yellow-400 hidden h8:flex flex-wrap items-center text-base justify-center uppercase my-4 k1:my-0 text-firstColor"
         >
-          <a
+          <RouterLink
+            to="/hizmetlerimiz"
             class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
-            >First Link</a
+            >Hizmetlerimiz</RouterLink
           >
           <a
             class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
@@ -86,16 +87,25 @@
             <div
               class="flex flex-col w-full p-6 h-full divide-y divide-yellow-400 space-y-2"
             >
-              <a href="" class="w-full hover:text-white hover:bg-gray-950 p-4"
-                >First Link</a
+              <RouterLink
+                to="/hizmetlerimiz"
+                href=""
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
+                >Hizmetlerimiz</RouterLink
               >
-              <a href="" class="w-full hover:text-white hover:bg-gray-950 p-4"
+              <a
+                href=""
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
                 >Second Link</a
               >
-              <a href="" class="w-full hover:text-white hover:bg-gray-950 p-4"
+              <a
+                href=""
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
                 >Third Link</a
               >
-              <a href="" class="w-full hover:text-white hover:bg-gray-950 p-4"
+              <a
+                href=""
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
                 >Four Link</a
               >
               <RouterLink to="/randevu" class="w-full pt-4">
