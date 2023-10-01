@@ -24,19 +24,20 @@
         >
           <RouterLink
             to="/hizmetlerimiz"
-            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
             >Hizmetlerimiz</RouterLink
           >
-          <a
-            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
-            >Second Link</a
+          <RouterLink
+            to="/avukatlar"
+            class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
+            >Avukatlar</RouterLink
           >
           <a
-            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
             >Third Link</a
           >
           <a
-            class="mr-5 cursor-pointer hover:text-yellow-500 hover:underline underline-offset-8 duration-150 ease-in-out flex items-center justify-center"
+            class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
             >Fourth Link</a
           >
         </nav>

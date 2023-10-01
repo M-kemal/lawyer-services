@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black h-full text-white">
-    <div class="CostumContainer">
+    <div class="CostumContainer bg-black">
       <HeaderApp />
       <h1 class="heading1 !text-center !text-firstColor mt-10">
         MHK Hukuk Danışmanlığı Hizmetleri
@@ -12,14 +12,19 @@
           :key="hizmetler.id"
         >
           <div class="flex flex-col items-center border p-2 h-full">
-            <h2 class="heading3 !mb-0 p-4 !text-gray-200 !text-center w-full">
+            <h2
+              class="heading3 !mb-0 p-4 !text-gray-200 !text-center w-full border-b border-b-orange-400"
+            >
               {{ hizmetler.kategori }}
             </h2>
-            <div class="gradientLine mx-auto"></div>
             <div class="my-10">
               <h3 class="">{{ hizmetler.misyon }}</h3>
             </div>
-            <div class="p-2" v-for="dava in hizmetler.davalar" :key="dava.id">
+            <div
+              class="p-2 h-full w-full"
+              v-for="dava in hizmetler.davalar"
+              :key="dava.id"
+            >
               <h3
                 class="py-2 underline underline-offset-8 heading4 !mb-0 !text-firstColor"
               >
