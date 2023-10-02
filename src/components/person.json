@@ -1,25 +1,25 @@
 {
   "avukatlar": [
     {
-      "name": "Ahmet Yılmaz",
-      "img": "https://thispersondoesnotexist.com/",
-      "job": "Avukat",
+      "name": "Deniz Yılmaz",
+      "img": "av3",
+      "job": "Stajyer",
       "id": 1,
-      "slug": "ahmet-yilmaz",
+      "slug": "deniz-yilmaz",
       "details": [
         {
-          "name": "Ahmet Yılmaz",
-          "slug": "ahmet-yilmaz-detay",
-          "tel": " +90 850 333 36 62",
-          "mail": "a.yilmaz@mhk.com.tr",
+          "name": "Deniz Yılmaz",
+          "slug": "deniz-yilmaz-detay",
+          "tel": " +90 850 333 69 56",
+          "mail": "d.yilmaz@mhk.com.tr",
           "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
-          "hakkında": "Ahmet Yılmaz, İstanbul Üniversitesi Hukuk Fakültesi mezunu olan bir avukattır. İş hukuku, ceza hukuku, aile hukuku ve ticaret hukuku gibi alanlarda uzmanlaşmıştır. 2005 yılında avukatlık kariyerine başlayan Ahmet Yılmaz, birçok yüksek profilli dava ve mahkeme sürecinde yer almış ve dürüstlük ilkesine bağlılığıyla tanınmıştır. Aynı zamanda Türkiye Barolar Birliği ve Ankara Barosu üyesidir. Ahmet Yılmaz, adaletin sağlanması ve müvekkillerinin haklarının korunması için mesleğine olan bağlılığı ile bilinir."
+          "hakkında": "Deniz Yılmaz, Ankara Barosu'na bağlı olarak faaliyet gösteren bir avukattır. Ankara Üniversitesi Hukuk Fakültesi'nden mezun olan Yılmaz, ticaret hukuku, aile hukuku ve gayrimenkul hukuku gibi alanlarda uzmandır. 2012 yılında avukatlık kariyerine başlamıştır ve müvekkillerine adil çözümler sunma konusunda kararlıdır."
         }
       ]
     },
     {
       "name": "Ayşe Kaya",
-      "img": "https://thispersondoesnotexist.com/",
+      "img": "av4",
       "job": "Avukat",
       "id": 2,
       "slug": "ayse-kaya",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Burak Şahin",
-      "img": "https://thispersondoesnotexist.com/",
+      "img": "av6",
       "job": "Avukat",
       "id": 3,
       "slug": "burak-sahin",
@@ -52,25 +52,25 @@
       ]
     },
     {
-      "name": "Deniz Yılmaz",
-      "img": "https://thispersondoesnotexist.com/",
-      "job": "Stajyer",
+      "name": "Ahmet Yılmaz",
+      "img": "av5",
+      "job": "Avukat",
       "id": 4,
-      "slug": "deniz-yilmaz",
+      "slug": "ahmet-yilmaz",
       "details": [
         {
-          "name": "Deniz Yılmaz",
-          "slug": "deniz-yilmaz-detay",
-          "tel": " +90 850 333 69 56",
-          "mail": "d.yilmaz@mhk.com.tr",
+          "name": "Ahmet Yılmaz",
+          "slug": "ahmet-yilmaz-detay",
+          "tel": " +90 850 333 36 62",
+          "mail": "a.yilmaz@mhk.com.tr",
           "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
-          "hakkında": "Deniz Yılmaz, Ankara Barosu'na bağlı olarak faaliyet gösteren bir avukattır. Ankara Üniversitesi Hukuk Fakültesi'nden mezun olan Yılmaz, ticaret hukuku, aile hukuku ve gayrimenkul hukuku gibi alanlarda uzmandır. 2012 yılında avukatlık kariyerine başlamıştır ve müvekkillerine adil çözümler sunma konusunda kararlıdır."
+          "hakkında": "Ahmet Yılmaz, İstanbul Üniversitesi Hukuk Fakültesi mezunu olan bir avukattır. İş hukuku, ceza hukuku, aile hukuku ve ticaret hukuku gibi alanlarda uzmanlaşmıştır. 2005 yılında avukatlık kariyerine başlayan Ahmet Yılmaz, birçok yüksek profilli dava ve mahkeme sürecinde yer almış ve dürüstlük ilkesine bağlılığıyla tanınmıştır. Aynı zamanda Türkiye Barolar Birliği ve Ankara Barosu üyesidir. Ahmet Yılmaz, adaletin sağlanması ve müvekkillerinin haklarının korunması için mesleğine olan bağlılığı ile bilinir."
         }
       ]
     },
     {
       "name": "Feride Aksoy",
-      "img": "https://thispersondoesnotexist.com/",
+      "img": "av2",
       "job": "Stajyer",
       "id": 5,
       "slug": "feride-aksoy",
@@ -87,7 +87,7 @@
     },
     {
       "name": "Elif Korkmaz",
-      "img": "https://thispersondoesnotexist.com/",
+      "img": "av1",
       "job": "Stajyer",
       "id": 6,
       "slug": "elif-korkmaz",
