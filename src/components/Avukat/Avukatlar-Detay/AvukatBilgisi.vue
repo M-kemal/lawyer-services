@@ -1,7 +1,7 @@
 <template>
-  <div class="myCard">
+  <div class="myCard selection:bg-firstColor selection:text-black">
     <div
-      class="flex flex-col k1:flex-row items-center k1:items-start justify-center p-6 k1:h-[30rem]"
+      class="flex flex-col k1:flex-row items-center k1:items-start justify-center p-6 k1:h-[30rem] animate-fadeInSlide"
     >
       <img
         :src="require(`../../../assets/${avukat.img}.jpeg`)"
@@ -14,27 +14,29 @@
         :key="avk.id"
         class="flex flex-col justify-center items-start"
       >
-        <h1 class="heading1 !text-black !mb-2 !mt-2 k1:mt-0">
+        <h1 class="heading1 !text-black !mb-2 !mt-2 k1:mt-0 ami">
           Av.{{ avk.name }}
         </h1>
         <div class="text-base">
-          <span class="heading4 !mb-1 !text-black !font-semibold">Tel :</span>
-          <span>{{ avk.tel }}</span>
+          <span class="heading5 !mb-1 !text-black !font-semibold">Tel :</span>
+          <a :href="'tel:' + avk.tel" class="hover:underline">{{ avk.tel }}</a>
         </div>
         <div class="text-base">
-          <span class="heading4 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
             >Mail :</span
           >
-          <span>{{ avk.mail }}</span>
+          <a :href="'mailto:' + avk.mail" class="hover:underline">{{
+            avk.mail
+          }}</a>
         </div>
         <div class="text-base">
-          <span class="heading4 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
             >Adres :</span
           >
           <span>{{ avk.adres }}</span>
         </div>
         <div class="leading-relaxed text-base">
-          <span class="heading4 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
             >Hakkında :</span
           >
           <span>{{ avk.hakkında }}</span>

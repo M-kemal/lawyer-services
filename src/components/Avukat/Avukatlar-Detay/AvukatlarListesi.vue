@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white">
+  <div class="bg-black text-white selection:bg-firstColor selection:text-black">
     <HeaderApp />
     <div class="CostumContainer h-full bg-black">
       <h2 class="heading1 !text-firstColor !text-center mt-10">

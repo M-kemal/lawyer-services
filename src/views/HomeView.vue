@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full h-full bg-black">
+  <div
+    class="w-full h-full bg-black selection:bg-firstColor selection:text-black"
+  >
     <div class="text-white bg-black">
       <HeaderApp class="w-full" />
       <div class="my-4">
@@ -18,15 +20,15 @@
               <!--! TEXT 1 -->
               <div
                 v-show="currentSlide === 1"
-                class="absolute top-0 left-2 animate-fadeInSlide bg-gray-950/25 rounded-2xl p-4"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-fadeInSlide bg-gray-950/25 rounded-2xl p-4 text-center text-firstColor"
               >
                 <p
-                  class="font-header italic h8:text-4xl animate-fadeInSlide text-gray-200 p-2 rounded-lg"
+                  class="font-header italic h8:text-4xl animate-fadeInSlide p-2 rounded-lg"
                 >
                   MHK Hukuk ,
                 </p>
                 <p
-                  class="font-header italic h8:text-4xl slideInLeft text-gray-200 p-2 rounded-lg"
+                  class="font-header italic h8:text-4xl slideInLeft p-2 rounded-lg"
                 >
                   alanında uzman avukatlarıyla yanınızda.
                 </p>
@@ -58,16 +60,24 @@
               </div>
               <!--? IMG -->
               <img
-                :src="require(`../assets/${slide}.jpg`)"
+                :src="require(`../assets/${slide}`)"
                 :alt="slide"
                 class="w-full h-full object-cover"
                 :class="{
-                  'object-bottom': slide === 'bg-1',
-                  'object-cover': slide !== 'bg-1',
-                  'object-top': slide === 'bg-4',
-                  'object-cover': slide !== 'bg-4',
+                  'hidden': slide === 'bg-1.jpg',
+                  'block': slide !== 'bg-1.jpg',
                 }"
               />
+              <video
+                v-if="slide === 'bg-1.jpg'"
+                autoplay
+                muted
+                ref="myVideo"
+                class="w-full h-full object-cover"
+              >
+                <source :src="require('@/assets/hero.mp4')" type="video/mp4" />
+                Tarayıcınız video etiketini desteklemiyor.
+              </video>
             </div>
           </SlideApp>
         </CarouselApp>
@@ -161,7 +171,7 @@ import SlideApp from "@/components/Slider/SlideApp.vue";
 import FeatureApp from "@/components/Feature/FeatureApp.vue";
 import FeatureDetail from "@/components/Feature/FeatureDetail.vue";
 import FooterApp from "@/components/Footer/FooterApp.vue";
-import { ref } from "vue";
+import { onBeforeMount, ref } from "vue";
 import Avukat from "@/components/data.json";
 import LawIcon from "@/components/icons/LawIcon.vue";
 export default {
@@ -176,11 +186,28 @@ export default {
     LawIcon,
   },
   setup() {
-    const crouselSlide = ["bg-1", "bg-2", "bg-3", "bg-4", "bg-5"];
+    const crouselSlide = [
+      "bg-1.jpg",
+      "bg-2.jpg",
+      "bg-3.jpg",
+      "bg-4.jpg",
+      "bg-5.jpg",
+    ];
 
     const detailTitle = ref(Avukat);
 
-    return { crouselSlide, detailTitle };
+    const myVideo = ref(null);
+
+    console.log(myVideo);
+
+    onBeforeMount(() => {
+      if (myVideo.value && typeof myVideo.value.play === "function") {
+        myVideo.value.currentTime = 3; // Videoyu 5. saniyeden başlat
+        myVideo.value.play(); // Videonun otomatik oynatılmasını sağlar
+      }
+    });
+
+    return { crouselSlide, detailTitle, myVideo };
   },
 };
 </script>
