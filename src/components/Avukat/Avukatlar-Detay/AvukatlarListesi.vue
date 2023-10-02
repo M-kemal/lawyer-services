@@ -39,13 +39,12 @@
             </router-view> -->
         </div>
       </div>
-
-      <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
-        <template #icon>
-          <LawIcon width="24" height="24" fill="#e1b254" />
-        </template>
-      </FooterApp>
     </div>
+    <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
+      <template #icon>
+        <LawIcon width="24" height="24" fill="#e1b254" />
+      </template>
+    </FooterApp>
   </div>
 </template>
 

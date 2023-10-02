@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="sticky w-full mx-auto CostumContainer top-0 z-50 bg-black bg-opacity-90"
-  >
+  <header class="sticky w-full mx-auto top-0 z-50 bg-black bg-opacity-90">
     <nav class="text-white font-header">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center"

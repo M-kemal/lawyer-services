@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-black h-full text-white">
+  <div class="bg-black h-full text-white w-full">
+    <HeaderApp />
     <div class="CostumContainer bg-black">
-      <HeaderApp />
       <h1 class="heading1 !text-center !text-firstColor mt-10">
         MHK Hukuk Danışmanlığı Hizmetleri
       </h1>
@@ -35,21 +35,21 @@
           </div>
         </div>
       </div>
-      <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
-        <template #icon>
-          <LawIcon width="24" height="24" fill="#e1b254" />
-        </template>
-      </FooterApp>
     </div>
+    <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
+      <template #icon>
+        <LawIcon width="24" height="24" fill="#e1b254" />
+      </template>
+    </FooterApp>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue';
-import HeaderApp from './HeaderApp.vue';
-import Avukat from '@/components/data.json';
-import FooterApp from '../Footer/FooterApp.vue';
-import LawIcon from '../icons/LawIcon.vue';
+import { ref } from "vue";
+import HeaderApp from "./HeaderApp.vue";
+import Avukat from "@/components/data.json";
+import FooterApp from "../Footer/FooterApp.vue";
+import LawIcon from "../icons/LawIcon.vue";
 export default {
   setup() {
     const avukatHizmet = ref(Avukat);

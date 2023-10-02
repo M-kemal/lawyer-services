@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-black h-full text-white">
+  <div class="bg-black h-full text-white w-full">
+    <HeaderApp />
     <div class="CostumContainer">
-      <HeaderApp />
       <div class="flex flex-col items-start justify-center mt-20">
         <h1 class="heading1 !text-center !my-0 w-full !text-firstColor">
           {{ myData.kategori }}
@@ -74,12 +74,12 @@
           </div>
         </div>
       </div>
-      <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
-        <template #icon>
-          <LawIcon width="24" height="24" fill="#e1b254" />
-        </template>
-      </FooterApp>
     </div>
+    <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
+      <template #icon>
+        <LawIcon width="24" height="24" fill="#e1b254" />
+      </template>
+    </FooterApp>
   </div>
 </template>
 
