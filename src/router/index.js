@@ -37,12 +37,14 @@ const routes = [
 
   {
     path: "/avukatlarimiz",
-    component: () => import("@/components/Deneme/DestinationList.vue"),
+    component: () =>
+      import("@/components/Avukat/Avukatlar-Detay/AvukatlarListesi.vue"),
     children: [
       {
         path: ":slug",
-        name: "ExperienceDetail",
-        component: () => import("@/components/Deneme/ExperienceDetail.vue"),
+        name: "AvukatBilgisi",
+        component: () =>
+          import("@/components/Avukat/Avukatlar-Detay/AvukatBilgisi"),
         props: true,
       },
     ],

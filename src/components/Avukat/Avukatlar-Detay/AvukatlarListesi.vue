@@ -1,11 +1,11 @@
 <template>
   <div>
     <ul>
-      <li v-for="destination in destinations" :key="destination.slug">
+      <li v-for="avukat in avukatlar" :key="avukat.slug">
         <router-link
-          :to="{ name: 'ExperienceDetail', params: { slug: destination.slug } }"
+          :to="{ name: 'AvukatBilgisi', params: { slug: avukat.slug } }"
         >
-          {{ destination.name }} - {{ destination.job }}
+          {{ avukat.name }} - {{ avukat.job }}
         </router-link>
       </li>
     </ul>
@@ -20,16 +20,16 @@ import { ref, onMounted } from "vue";
 import jsonData from "@/components/person.json";
 
 export default {
-  name: "DestinationList",
+  name: "AvukatlarListesi",
   setup() {
-    const destinations = ref(jsonData.destinations);
+    const avukatlar = ref(jsonData.avukatlar);
 
     // İlk slug verisini yükle
     const router = useRouter();
     const loadInitialSlug = () => {
-      if (destinations.value.length > 0) {
-        const firstSlug = destinations.value[0].slug;
-        router.push({ name: "ExperienceDetail", params: { slug: firstSlug } });
+      if (avukatlar.value.length > 0) {
+        const firstSlug = avukatlar.value[0].slug;
+        router.push({ name: "AvukatBilgisi", params: { slug: firstSlug } });
       }
     };
 
@@ -38,7 +38,7 @@ export default {
     });
 
     return {
-      destinations,
+      avukatlar,
     };
   },
 };

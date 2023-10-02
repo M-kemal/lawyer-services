@@ -1,12 +1,12 @@
 {
-  "destinations": [
+  "avukatlar": [
     {
       "name": "Ahmet Yılmaz",
       "img": "https://thispersondoesnotexist.com/",
       "job": "Avukat",
       "id": 1,
       "slug": "ahmet-yilmaz",
-      "experiences": [
+      "details": [
         {
           "name": "Ahmet Yılmaz",
           "slug": "ahmet-yilmaz-detay",
@@ -23,7 +23,7 @@
       "job": "Avukat",
       "id": 2,
       "slug": "ayse-kaya",
-      "experiences": [
+      "details": [
         {
           "name": "Ayşe Kaya",
           "slug": "ayse-kaya-detay",
@@ -40,7 +40,7 @@
       "job": "Avukat",
       "id": 3,
       "slug": "burak-sahin",
-      "experiences": [
+      "details": [
         {
           "name": "Burak Şahin",
           "slug": "burak-sahin-detay",
@@ -57,7 +57,7 @@
       "job": "Stajyer",
       "id": 4,
       "slug": "deniz-yilmaz",
-      "experiences": [
+      "details": [
         {
           "name": "Deniz Yılmaz",
           "slug": "deniz-yilmaz-detay",
@@ -74,7 +74,7 @@
       "job": "Stajyer",
       "id": 5,
       "slug": "feride-aksoy",
-      "experiences": [
+      "details": [
         {
           "name": "Feride Aksoy",
           "slug": "feride-aksoy-detay",
@@ -91,7 +91,7 @@
       "job": "Stajyer",
       "id": 6,
       "slug": "elif-korkmaz",
-      "experiences": [
+      "details": [
         {
           "name": "Elif Korkmaz",
           "slug": "elif-korkmaz-detay",
