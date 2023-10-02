@@ -27,11 +27,29 @@
             class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
             >Hizmetlerimiz</RouterLink
           >
-          <RouterLink
-            to="/avukatlar"
+          <div
             class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
-            >Avukatlar</RouterLink
           >
+            <div class="group relative">
+              Avukatlar
+
+              <div
+                class="opacity-0 flex flex-col bg-white text-diversity absolute top-8 left-0 w-44 group-hover:opacity-100 duration-300 ease-linear"
+              >
+                <router-link
+                  class=""
+                  v-for="destination in destinations"
+                  :key="destination.id"
+                  :to="{
+                    name: 'destination.show',
+                    params: { id: destination.id, slug: destination.slug },
+                  }"
+                >
+                  {{ destination.name }}></router-link
+                >
+              </div>
+            </div>
+          </div>
           <a
             class="mr-5 cursor-pointer hover:text-white duration-200 ease-in-out flex items-center justify-center"
             >Third Link</a
@@ -126,10 +144,10 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 
-import LawIcon from '../icons/LawIcon.vue';
-
+import LawIcon from "../icons/LawIcon.vue";
+import person from "@/components/person.json";
 export default {
   components: { LawIcon },
   setup() {
@@ -138,7 +156,9 @@ export default {
       showMenu.value = !showMenu.value;
     };
 
-    return { showMenu, toggleNavbar };
+    const sourceData = person;
+
+    return { showMenu, toggleNavbar, destinations: sourceData.destinations };
   },
 };
 </script>

@@ -1,0 +1,106 @@
+{
+  "destinations": [
+    {
+      "name": "Ahmet Yılmaz",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Avukat",
+      "id": 1,
+      "slug": "ahmet-yilmaz",
+      "experiences": [
+        {
+          "name": "Ahmet Yılmaz",
+          "slug": "ahmet-yilmaz-detay",
+          "tel": " +90 850 333 36 62",
+          "mail": "a.yilmaz@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Ahmet Yılmaz, İstanbul Üniversitesi Hukuk Fakültesi mezunu olan bir avukattır. İş hukuku, ceza hukuku, aile hukuku ve ticaret hukuku gibi alanlarda uzmanlaşmıştır. 2005 yılında avukatlık kariyerine başlayan Ahmet Yılmaz, birçok yüksek profilli dava ve mahkeme sürecinde yer almış ve dürüstlük ilkesine bağlılığıyla tanınmıştır. Aynı zamanda Türkiye Barolar Birliği ve Ankara Barosu üyesidir. Ahmet Yılmaz, adaletin sağlanması ve müvekkillerinin haklarının korunması için mesleğine olan bağlılığı ile bilinir."
+        }
+      ]
+    },
+    {
+      "name": "Ayşe Kaya",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Avukat",
+      "id": 2,
+      "slug": "ayse-kaya",
+      "experiences": [
+        {
+          "name": "Ayşe Kaya",
+          "slug": "ayse-kaya-detay",
+          "tel": " +90 850 333 32 22",
+          "mail": "a.kaya@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Ankara Üniversitesi Hukuk Fakültesi'nden mezun olan Ayşe Kaya, Ankara Barosu'na kayıtlı bir avukattır. Ana uzmanlık alanları arasında iş hukuku, aile hukuku ve ceza hukuku bulunur. 2007 yılında avukatlık kariyerine başlamış olan Ayşe Kaya, müvekkillerinin haklarını koruma konusundaki kararlılığı ve adalet anlayışı ile tanınır."
+        }
+      ]
+    },
+    {
+      "name": "Burak Şahin",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Avukat",
+      "id": 3,
+      "slug": "burak-sahin",
+      "experiences": [
+        {
+          "name": "Burak Şahin",
+          "slug": "burak-sahin-detay",
+          "tel": " +90 850 333 82 52",
+          "mail": "a.kaya@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Ankara Barosu'na kayıtlı olan Burak Şahin, Hacettepe Üniversitesi Hukuk Fakültesi'nden mezun olmuş bir avukattır. Özellikle ceza hukuku, idare hukuku ve iş hukuku alanlarında deneyime sahiptir. Hukuk kariyerine 2005 yılında başlayan Burak Şahin, adaletin tecellisi için çalışmaya devam etmektedir."
+        }
+      ]
+    },
+    {
+      "name": "Deniz Yılmaz",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Stajyer",
+      "id": 4,
+      "slug": "deniz-yilmaz",
+      "experiences": [
+        {
+          "name": "Deniz Yılmaz",
+          "slug": "deniz-yilmaz-detay",
+          "tel": " +90 850 333 69 56",
+          "mail": "d.yilmaz@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Deniz Yılmaz, Ankara Barosu'na bağlı olarak faaliyet gösteren bir avukattır. Ankara Üniversitesi Hukuk Fakültesi'nden mezun olan Yılmaz, ticaret hukuku, aile hukuku ve gayrimenkul hukuku gibi alanlarda uzmandır. 2012 yılında avukatlık kariyerine başlamıştır ve müvekkillerine adil çözümler sunma konusunda kararlıdır."
+        }
+      ]
+    },
+    {
+      "name": "Feride Aksoy",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Stajyer",
+      "id": 5,
+      "slug": "feride-aksoy",
+      "experiences": [
+        {
+          "name": "Feride Aksoy",
+          "slug": "feride-aksoy-detay",
+          "tel": " +90 850 333 88 06",
+          "mail": "f.aksoy@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Feride Aksoy, Ankara Barosu'na üye bir avukattır ve Gazi Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Ana uzmanlık alanları arasında ceza hukuku, idare hukuku ve aile hukuku bulunur. 2008 yılında avukatlık mesleğine adım atmış olan Feride Aksoy, müvekkillerinin hukuki ihtiyaçlarına özenle yaklaşır."
+        }
+      ]
+    },
+    {
+      "name": "Elif Korkmaz",
+      "img": "https://thispersondoesnotexist.com/",
+      "job": "Stajyer",
+      "id": 6,
+      "slug": "elif-korkmaz",
+      "experiences": [
+        {
+          "name": "Elif Korkmaz",
+          "slug": "elif-korkmaz-detay",
+          "tel": " +90 850 333 22 16",
+          "mail": "e.korkmaz@mhk.com.tr",
+          "adres": "Kugulu İs Merkezi 123/134 (Tunali Hilmi Caddesi), Ankara - Çankaya",
+          "hakkında": "Elif Korkmaz, Ankara Barosu'na bağlı bir stajyer avukattır. Hukuk eğitimine Ankara Üniversitesi Hukuk Fakültesi'nde başlamış ve stajyerlik dönemini hukuk bürosunda tamamlamıştır. Staj dönemi boyunca özellikle ceza hukuku, aile hukuku ve iş hukuku gibi farklı hukuki alanlarda deneyim kazanmış ve hukukun pratiğini öğrenmiştir. Elif, gelecekteki hukuk kariyerine sağlam bir temel atma amacıyla azimle çalışmaktadır ve adaletin sağlanmasına katkıda bulunma hedefini taşımaktadır."
+        }
+      ]
+    }
+  ]
+}

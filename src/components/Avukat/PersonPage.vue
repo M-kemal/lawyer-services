@@ -1,8 +1,8 @@
 <template>
   <div class="bg-black">
-    <div class="CostumContainer">
+    <div class="CostumContainer text-white">
       <HeaderApp />
-      <section class="text-gray-200 body-font">
+      <!-- <section class="text-gray-200 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h1
@@ -21,7 +21,7 @@
               ihtiyaçlarını karşılamak için geniş bir yelpazede hizmet sunar.
             </p>
           </div>
-          <div class="flex flex-wrap -m-2">
+          <div class="flex flex-col flex-wrap -m-2">
             <div
               class="p-2 lg:w-1/3 md:w-1/2 w-full"
               v-for="(avukat, index) in lawyerTeam"
@@ -39,13 +39,38 @@
                   <h2 class="text-gray-200 title-font font-medium">
                     {{ avukat.name }}
                   </h2>
-                  <p class="text-gray-500">{{ avukat.detail }}</p>
+                  <p class="text-gray-500">{{ avukat.job }}</p>
                 </div>
               </div>
+              <div class="card">
+                <router-link
+                  v-for="detay in avukat.detail"
+                  :key="detay.slug"
+                  :to="{
+                    name: 'detay',
+                    params: { detaySlug: detay.slug },
+                    props: { detay: detay },
+                  }"
+                >
+                  <PersonDetail :detay="detay" />
+                </router-link>
+              </div>
+              <router-view></router-view>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+      <!-- <router-link
+        v-for="destination in destinations"
+        :key="destination.id"
+        :to="{
+          name: 'destination.show',
+          params: { id: destination.id, slug: destination.slug },
+        }"
+      >
+        {{ destination.name }} - PP
+      </router-link> -->
+
       <FooterApp brand="MHK Hukuk" year="2023" developer="mkemal.krdnz">
         <template #icon>
           <LawIcon width="24" height="24" fill="#e1b254" />
@@ -56,47 +81,19 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import HeaderApp from './HeaderApp.vue';
-import FooterApp from '../Footer/FooterApp.vue';
-import LawIcon from '../icons/LawIcon.vue';
+import HeaderApp from "./HeaderApp.vue";
+import FooterApp from "../Footer/FooterApp.vue";
+import LawIcon from "../icons/LawIcon.vue";
+// import person from "@/components/person.json";
+
+// import PersonDetail from "./PersonDetail.vue";
 
 export default {
-  setup() {
-    const lawyerTeam = ref([
-      {
-        name: 'Ali Veli',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Avukat',
-      },
-      {
-        name: 'Hamza Anzak',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Avukat',
-      },
-      {
-        name: 'İhsan Kara',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Avukat',
-      },
-      {
-        name: 'Mahmut Alaca',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Stajyer',
-      },
-      {
-        name: 'Hüsnü Derince',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Stajyer',
-      },
-      {
-        name: 'Deniz Mavi',
-        img: 'https://thispersondoesnotexist.com/',
-        detail: 'Stajyer',
-      },
-    ]);
-    return { lawyerTeam };
-  },
+  // setup() {
+  //   const sourceData = person;
+
+  //   return { destinations: sourceData.destinations };
+  // },
   components: { HeaderApp, FooterApp, LawIcon },
 };
 </script>
