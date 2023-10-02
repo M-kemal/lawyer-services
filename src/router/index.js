@@ -34,22 +34,16 @@ const routes = [
 
     component: () => import("../components/Avukat/HizmetPage.vue"),
   },
+
   {
     path: "/avukatlarimiz",
-    name: "avukatlarimiz",
-
-    component: () => import("../components/Avukat/PersonPage.vue"),
-  },
-  {
-    path: "/destination/:id/:slug",
-    name: "destination.show",
-    component: () => import("../components/Avukat/PersonDetail.vue"),
+    component: () => import("@/components/Deneme/DestinationList.vue"),
     children: [
       {
-        path: ":experienceSlug",
-        name: "experience.show",
-        component: () => import("../components/Avukat/PersonView.vue"),
-        props: (route) => ({ ...route.params, id: parseInt(route.params.id) }),
+        path: ":slug",
+        name: "ExperienceDetail",
+        component: () => import("@/components/Deneme/ExperienceDetail.vue"),
+        props: true,
       },
     ],
   },
