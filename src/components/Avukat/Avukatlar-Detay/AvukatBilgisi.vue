@@ -1,6 +1,8 @@
 <template>
   <div class="myCard">
-    <div class="flex items-start justify-center p-6 h-[30rem]">
+    <div
+      class="flex flex-col k1:flex-row items-center k1:items-start justify-center p-6 k1:h-[30rem]"
+    >
       <img
         :src="require(`../../../assets/${avukat.img}.jpeg`)"
         :alt="avukat.name"
@@ -12,7 +14,9 @@
         :key="avk.id"
         class="flex flex-col justify-center items-start"
       >
-        <h1 class="heading1 !text-black">Av.{{ avk.name }}</h1>
+        <h1 class="heading1 !text-black !mb-2 !mt-2 k1:mt-0">
+          Av.{{ avk.name }}
+        </h1>
         <div class="text-base">
           <span class="heading4 !mb-1 !text-black !font-semibold">Tel :</span>
           <span>{{ avk.tel }}</span>
