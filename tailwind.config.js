@@ -51,7 +51,10 @@ module.exports = {
         innovation: "#EDB407",
         access: "#FB6640",
         communication: "#F82553",
-        firstColor: "#e1b254",
+        // firstColor: "#e1b254",
+        firstColor: "#d8ab4e",
+        secondColor: "#040404",
+        firstColor2: "#3d3d3f",
       },
       keyframes: {
         wiggle: {

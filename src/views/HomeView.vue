@@ -1,8 +1,8 @@
 <template>
   <div
-    class="w-full h-full bg-black selection:bg-firstColor selection:text-black"
+    class="w-full h-full bg-secondColor selection:bg-firstColor selection:text-secondColor"
   >
-    <div class="text-white bg-black">
+    <div class="text-white bg-secondColor">
       <HeaderApp class="w-full" />
       <div class="my-4">
         <CarouselApp
@@ -20,7 +20,7 @@
               <!--! TEXT 1 -->
               <div
                 v-show="currentSlide === 1"
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-fadeInSlide bg-gray-950/25 rounded-2xl p-4 text-center text-firstColor"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-fadeInSlide bg-secondColor/30 rounded-2xl p-4 text-center text-firstColor"
               >
                 <p
                   class="font-header italic h8:text-4xl animate-fadeInSlide p-2 rounded-lg"
@@ -40,7 +40,7 @@
                 class="absolute top-0 right-0 slideInDown"
               >
                 <p
-                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-gray-950/25 p-10 rounded-lg"
+                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-secondColor/30 p-10 rounded-lg"
                 >
                   Hukuki Destek, Size Güven Verir
                 </p>
@@ -52,7 +52,7 @@
                 class="absolute bottom-10 left-0"
               >
                 <p
-                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-gray-950/25 p-10 rounded-lg"
+                  class="font-header italic text-4xl animate-fadeInSlide text-gray-200 bg-secondColor/30 p-10 rounded-lg"
                 >
                   Sorunları Çözmek İçin Buradayız . . .
                 </p>

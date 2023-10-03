@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black h-full text-white w-full">
+  <div class="bg-secondColor h-full text-white w-full">
     <HeaderApp />
     <div class="CostumContainer">
       <div class="flex flex-col items-start justify-center mt-20">
@@ -18,12 +18,14 @@
           class="flex flex-col k1:flex-row items-center justify-center w-full gap-4 mb-10"
         >
           <div
-            class="myCard w-full h8:h-96 text-gray-950 rounded-3xl"
+            class="myCard w-full h8:h-96 text-secondColor rounded-3xl"
             v-for="hizmetler in myData.hizmetler"
             :key="hizmetler.id"
           >
             <div class="flex flex-col justify-between p-10">
-              <p class="heading2 !text-gray-950 border-b p-2 border-b-gray-950">
+              <p
+                class="heading2 !text-secondColor border-b p-2 border-b-secondColor"
+              >
                 {{ hizmetler.baslik }}
               </p>
 

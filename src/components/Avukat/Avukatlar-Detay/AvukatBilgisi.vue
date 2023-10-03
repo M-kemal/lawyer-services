@@ -1,5 +1,5 @@
 <template>
-  <div class="myCard selection:bg-firstColor selection:text-black">
+  <div class="myCard selection:bg-firstColor selection:text-secondColor">
     <div
       class="flex flex-col k1:flex-row items-center k1:items-start justify-center p-6 k1:h-[30rem] animate-fadeInSlide"
     >
@@ -14,15 +14,17 @@
         :key="avk.id"
         class="flex flex-col justify-center items-start"
       >
-        <h1 class="heading1 !text-black !mb-2 !mt-2 k1:mt-0 ami">
+        <h1 class="heading1 !text-secondColor !mb-2 !mt-2 k1:mt-0 ami">
           Av.{{ avk.name }}
         </h1>
         <div class="text-base">
-          <span class="heading5 !mb-1 !text-black !font-semibold">Tel :</span>
+          <span class="heading5 !mb-1 !text-secondColor !font-semibold"
+            >Tel :</span
+          >
           <a :href="'tel:' + avk.tel" class="hover:underline">{{ avk.tel }}</a>
         </div>
         <div class="text-base">
-          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-secondColor !font-semibold"
             >Mail :</span
           >
           <a :href="'mailto:' + avk.mail" class="hover:underline">{{
@@ -30,13 +32,13 @@
           }}</a>
         </div>
         <div class="text-base">
-          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-secondColor !font-semibold"
             >Adres :</span
           >
           <span>{{ avk.adres }}</span>
         </div>
         <div class="leading-relaxed text-base">
-          <span class="heading5 mr-1 !mb-1 !text-black !font-semibold"
+          <span class="heading5 mr-1 !mb-1 !text-secondColor !font-semibold"
             >Hakkında :</span
           >
           <span>{{ avk.hakkında }}</span>

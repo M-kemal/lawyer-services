@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky w-full mx-auto top-0 z-50 bg-black bg-opacity-90">
+  <header class="sticky w-full mx-auto top-0 z-50 bg-secondColor bg-opacity-90">
     <nav class="text-white font-header">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center"
@@ -90,22 +90,22 @@
               <RouterLink
                 to="/hizmetlerimiz"
                 href=""
-                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-secondColor p-2"
                 >Hizmetlerimiz</RouterLink
               >
               <a
                 href=""
-                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-secondColor p-2"
                 >Second Link</a
               >
               <a
                 href=""
-                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-secondColor p-2"
                 >Third Link</a
               >
               <a
                 href=""
-                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-gray-950 p-2"
+                class="w-full hover:!text-white heading2 !text-firstColor !mb-0 hover:bg-secondColor p-2"
                 >Four Link</a
               >
               <RouterLink to="/randevu" class="w-full pt-4">

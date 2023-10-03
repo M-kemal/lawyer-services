@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-black text-white selection:bg-firstColor selection:text-black">
+  <div
+    class="bg-secondColor text-white selection:bg-firstColor selection:text-secondColor"
+  >
     <HeaderApp />
-    <div class="CostumContainer h-full bg-black">
+    <div class="CostumContainer h-full bg-secondColor">
       <h2 class="heading1 !text-firstColor !text-center mt-10">
         MHK Hukuk Avukat Kadromuz
       </h2>
@@ -9,7 +11,7 @@
       <div
         class="flex k1:flex-row flex-col items-start justify-between k1:space-x-2 pt-0 pb-10 k1:py-10 h-full"
       >
-        <div class="k1:w-1/4 w-full order-2 k1:order-1 bg-black h-full">
+        <div class="k1:w-1/4 w-full order-2 k1:order-1 bg-secondColor h-full">
           <div v-for="avukat in avukatlar" :key="avukat.slug" class="">
             <router-link
               :to="{ name: 'AvukatBilgisi', params: { slug: avukat.slug } }"
@@ -29,7 +31,7 @@
             </router-link>
           </div>
         </div>
-        <div class="k1:w-3/4 flex w-full h-full bg-black">
+        <div class="k1:w-3/4 flex w-full h-full bg-secondColor">
           <router-view :key="$route.path"></router-view>
 
           <!-- <router-view v-slot="{ Component }" :key="$route.path">
